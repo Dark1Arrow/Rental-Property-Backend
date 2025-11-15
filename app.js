@@ -7,9 +7,9 @@ const app = express()
 app.use(
   cors({
     origin: [
-      "https://final-year-project-five-navy.vercel.app",
-      "https://final-year-project-dark1arrows-projects.vercel.app",
-      /\.vercel\.app$/, // allow any vercel deployment
+      "http://localhost:3000", // local frontend
+      "https://final-year-project-five-navy.vercel.app", // production frontend
+      "https://final-year-project-dark1arrows-projects.vercel.app", // preview frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
